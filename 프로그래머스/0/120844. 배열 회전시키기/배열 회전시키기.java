@@ -1,6 +1,5 @@
 class Solution {
     public int[] solution(int[] numbers, String direction) {
-        int[] answer = {};
         
         if (direction.equals("right")) {
             int rightest = numbers[numbers.length - 1];
