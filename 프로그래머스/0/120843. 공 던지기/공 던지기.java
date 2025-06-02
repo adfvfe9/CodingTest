@@ -1,10 +1,6 @@
 class Solution {
     public int solution(int[] numbers, int k) {
-        int answer = 0;
-        int i = (k * 2 - 2) % numbers.length;
-        
-        answer = numbers[i];
-        
+        int answer = numbers[(k * 2 - 2) % numbers.length];
         return answer;
     }
 }
