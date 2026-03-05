@@ -7,10 +7,8 @@ class Solution {
         
         for (int i = max; i >= 0; i--) {
             for (int j = 0; j < citations.length; j++) {
-                if (citations[j] >= i) {
-                    if (citations.length - j >= i) {
-                        return i;
-                    }
+                if (citations[j] >= i && citations.length - j >= i) {
+                    return i;
                 }
             }
         }
